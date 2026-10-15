@@ -2,4 +2,4 @@
 
 ## Cost-aware sequential diagnosis on the CN–MCI–AD continuum
 
-<p align="center"><strong>Coming Soon</strong></p>
+<p align="center"><strong>Code will be released upon acceptance.</strong></p>
