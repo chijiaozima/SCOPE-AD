@@ -1,0 +1,517 @@
+{
+  "format_version": 1,
+  "run": "4090pc August 2026",
+  "actions": [
+    "REQUEST_COGNITIVE",
+    "REQUEST_APOE",
+    "REQUEST_BLOOD",
+    "REQUEST_CSF",
+    "REQUEST_STRUCTURAL_MRI",
+    "REQUEST_AMYLOID_PET",
+    "REQUEST_TAU_PET",
+    "DIAGNOSE_CN",
+    "DIAGNOSE_MCI",
+    "DIAGNOSE_AD"
+  ],
+  "ordinal_labels": [
+    "CN",
+    "MCI",
+    "AD"
+  ],
+  "teacher_manifest_sha256": "939cac1c2cba1b914c41c6de8f7bb5ba26a15689055d2bde2564567cb9f1ba88",
+  "canonical_input_schema_sha256": "4618d4ed4ca8cea0a08d1097c5fafd5a0e1a26a74295c1283454da83b3bec5e5",
+  "canonical_encoder_sha256": "b23332a698aa5946c9401a92be29ebc254bb021382470452825b92a8d90b9e0c",
+  "training_trajectories_sha256": "fe912cb4b7b05b47440ff0d83f0db9c2fbfe8478529380ffc0db29295bf22c9b",
+  "checkpoints": [
+    {
+      "branch": "ordinal",
+      "seed": 42,
+      "best_epoch": 22,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal",
+      "source": "artifacts/ordinal/ordinal_belief.pt",
+      "source_sha256": "e3a1f22d26af358c0f45fff12d1f881f7455a5300b881415d1914bbaa0dcf479",
+      "source_preprocessor_sha256": "f366374965bae48822b9bc3cbce7f5b908525d7726e2a7d60241637e01acc9ee",
+      "source_calibration_sha256": "0fdb76d8ff8d3f7334eaf9ed2ab0ad8f77d1a3c8d76d4425286d46cd1ab53846",
+      "input_dims": {
+        "demographic": 45,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ordinal_oof/fold_0",
+      "seed": 42,
+      "best_epoch": 9,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal_oof/fold_0",
+      "source": "artifacts/ordinal/crossfit/fold_0/model.pt",
+      "source_sha256": "3ee59cdde5864279b4c3417fd1aba4f5d046182dd4ca993aa89789ffcb0023a3",
+      "source_preprocessor_sha256": "c785e5433405838110c847f2c7ee74aa6ed2dcb714416b99a7c48e805c5fc33a",
+      "source_calibration_sha256": "09c6cf9e189989aae09f20473d92fbf99bbc2e017178892d31ddba642e6fdf70",
+      "input_dims": {
+        "demographic": 45,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ordinal_oof/fold_1",
+      "seed": 100045,
+      "best_epoch": 23,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal_oof/fold_1",
+      "source": "artifacts/ordinal/crossfit/fold_1/model.pt",
+      "source_sha256": "9463ed621bf0fbadd16987c251da058150c1b1d055c29c0235e20e4422ad2b0d",
+      "source_preprocessor_sha256": "a1d2e26c2a970c4ddc9ed82cd20876b3c50801183bb76c5817ba3036a7b89819",
+      "source_calibration_sha256": "395c629d26ddd4a078b36a3e5ab7150e1bf49c39ce12a1aaa11c63218dd9036a",
+      "input_dims": {
+        "demographic": 45,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ordinal_oof/fold_2",
+      "seed": 200048,
+      "best_epoch": 24,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal_oof/fold_2",
+      "source": "artifacts/ordinal/crossfit/fold_2/model.pt",
+      "source_sha256": "e3b00910af604cbb8e42fb124b684dd96ba13511d81f5bde1e69ac76cc01bc71",
+      "source_preprocessor_sha256": "feed080d5858e078a5efc1a7a57da5338ccb73279aecdc18fb92b63a861a4253",
+      "source_calibration_sha256": "711cf21c26a94f59fcf0fe51cf31da4a02456ac2943f748ee76a3dbef5c782bf",
+      "input_dims": {
+        "demographic": 44,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ordinal_oof/fold_3",
+      "seed": 300051,
+      "best_epoch": 3,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal_oof/fold_3",
+      "source": "artifacts/ordinal/crossfit/fold_3/model.pt",
+      "source_sha256": "41188c7fcc644f3171c3bbc40a0e6614007469e81dcb53659385dcc9d848fc18",
+      "source_preprocessor_sha256": "d252ec36ba79ccbbfdbf5fd3e66b2967ede3edd8c836f79882540aea0ddacc31",
+      "source_calibration_sha256": "48fbbd2a90f785d9088e28cc8fedac88a2f6095011d257caba6e929bdd46ec9c",
+      "input_dims": {
+        "demographic": 45,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ordinal_oof/fold_4",
+      "seed": 400054,
+      "best_epoch": 3,
+      "configs": [
+        "configs/data.yaml",
+        "configs/ordinal.yaml"
+      ],
+      "directory": "weights/ordinal_oof/fold_4",
+      "source": "artifacts/ordinal/crossfit/fold_4/model.pt",
+      "source_sha256": "28797e1e973518033012c71f8e87a16d163dad33641db383d5e6a46209b67c5d",
+      "source_preprocessor_sha256": "b9a5e3f36e2fd17d32dc3fae9b78c5ee281c7d1b709b0c5058e66d724b09db14",
+      "source_calibration_sha256": "609ea33d6723007124583d538e15b7da30b532514a9c615cc35504cda7d5d108",
+      "input_dims": {
+        "demographic": 44,
+        "cognitive": 6,
+        "apoe": 7,
+        "blood": 39,
+        "csf": 8,
+        "structural_mri": 16,
+        "amyloid_pet": 28,
+        "tau_pet": 14
+      },
+      "model_config": {
+        "encoder_hidden_dim": 64,
+        "embedding_dim": 64,
+        "latent_dim": 64,
+        "dropout": 0.2,
+        "threshold_epsilon": 0.0001
+      }
+    },
+    {
+      "branch": "ebm",
+      "seed": 42,
+      "best_epoch": 14,
+      "configs": [
+        "configs/planner.yaml",
+        "configs/costs.yaml"
+      ],
+      "directory": "weights/ebm/seed_42",
+      "energy_temperature": 0.3,
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          256,
+          128
+        ],
+        "dropout": 0.1
+      },
+      "source_sha256": "220d3403f566f9babaab8fe410930d57c38183a4154e0552b450e7e0f64b8377",
+      "source": "artifacts/planner/checkpoints/seed_42.pt"
+    },
+    {
+      "branch": "ebm",
+      "seed": 123,
+      "best_epoch": 8,
+      "configs": [
+        "configs/planner.yaml",
+        "configs/costs.yaml"
+      ],
+      "directory": "weights/ebm/seed_123",
+      "energy_temperature": 0.3,
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          256,
+          128
+        ],
+        "dropout": 0.1
+      },
+      "source_sha256": "630a29931b06bd10da8c9775113c1ac29b2483f5c79f799f392107e66d6ceb37",
+      "source": "artifacts/planner/checkpoints/seed_123.pt"
+    },
+    {
+      "branch": "ebm",
+      "seed": 2026,
+      "best_epoch": 11,
+      "configs": [
+        "configs/planner.yaml",
+        "configs/costs.yaml"
+      ],
+      "directory": "weights/ebm/seed_2026",
+      "energy_temperature": 0.3,
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          256,
+          128
+        ],
+        "dropout": 0.1
+      },
+      "source_sha256": "33844494695d47ac17797e169f12b81a4e059fabe0c6eb35c36dcb1cf23eb0d7",
+      "source": "artifacts/planner/checkpoints/seed_2026.pt"
+    },
+    {
+      "branch": "mlp",
+      "seed": 42,
+      "best_epoch": 100,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/mlp/seed_42",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "cc6863450a820efeccc502dae9ef9a4a679304621e18f71b82622119f21a2dca",
+      "source": "artifacts/students/mlp/seed_42.pt",
+      "teacher_seed": 42,
+      "objective": "soft_kl"
+    },
+    {
+      "branch": "mlp",
+      "seed": 123,
+      "best_epoch": 48,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/mlp/seed_123",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "afb2d07774c116bd4815fb5ad8a5bf2b17a036e5c1acb56144940f4effb46584",
+      "source": "artifacts/students/mlp/seed_123.pt",
+      "teacher_seed": 123,
+      "objective": "soft_kl"
+    },
+    {
+      "branch": "mlp",
+      "seed": 2026,
+      "best_epoch": 100,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/mlp/seed_2026",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "4ff53db93c93315ce4d7140a6987353b626fae64b70b6cba1fc4befdfdaa5245",
+      "source": "artifacts/students/mlp/seed_2026.pt",
+      "teacher_seed": 2026,
+      "objective": "soft_kl"
+    },
+    {
+      "branch": "reactive_mlp",
+      "seed": 42,
+      "best_epoch": 6,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/reactive_mlp/seed_42",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "b287b7a1e112dc8007f254d94bfebff0cbd2eb4b50da2db0b33196b6f421da64",
+      "source": "artifacts/students/reactive_mlp/seed_42.pt",
+      "teacher_seed": 42,
+      "objective": "hard_direct_action_classification"
+    },
+    {
+      "branch": "reactive_mlp",
+      "seed": 123,
+      "best_epoch": 54,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/reactive_mlp/seed_123",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "5c5767a4c66c7cf9f1b537f613f85e59477db5ab6307b9ab02b9eb0d16ee3153",
+      "source": "artifacts/students/reactive_mlp/seed_123.pt",
+      "teacher_seed": 123,
+      "objective": "hard_direct_action_classification"
+    },
+    {
+      "branch": "reactive_mlp",
+      "seed": 2026,
+      "best_epoch": 21,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/reactive_mlp/seed_2026",
+      "model_config": {
+        "input_dim": 87,
+        "hidden_dims": [
+          256,
+          128
+        ],
+        "dropout": 0.1,
+        "activation": "gelu"
+      },
+      "source_sha256": "e7b129ac0b62efc6c21073661996dc21313a27127e5a61ac1a9a1d18ee8fdfb3",
+      "source": "artifacts/students/reactive_mlp/seed_2026.pt",
+      "teacher_seed": 2026,
+      "objective": "hard_direct_action_classification"
+    },
+    {
+      "branch": "qwen",
+      "seed": 42,
+      "best_epoch": 1,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/qwen/seed_42",
+      "base_model": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "max_length": 1536,
+      "prompt_max_chars": 3000,
+      "source_sha256": "fd70ffc8b08bc21df57cb13191509954ba2310714e8df664e3a6d7f179da5cec",
+      "source_payload_sha256": "df0b6820350a9ce0c76e07c4dee813edb9e4532eca6d92d70c2e5672ece98e2b",
+      "tokenizer": "weights/qwen/tokenizer",
+      "source": "artifacts/students/qwen/seed_42/policy_metadata.json",
+      "teacher_seed": 42,
+      "objective": "soft_kl"
+    },
+    {
+      "branch": "qwen",
+      "seed": 123,
+      "best_epoch": 3,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/qwen/seed_123",
+      "base_model": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "max_length": 1536,
+      "prompt_max_chars": 3000,
+      "source_sha256": "c5d50eb94bb04176d238de99906d5697ace8afc8e09f0f212297952bc393c60f",
+      "source_payload_sha256": "7ffb0cabc941e8daa12afc2df054adfe62190191e4d90791c5cf5b1c28939b29",
+      "tokenizer": "weights/qwen/tokenizer",
+      "source": "artifacts/students/qwen/seed_123/policy_metadata.json",
+      "teacher_seed": 123,
+      "objective": "soft_kl"
+    },
+    {
+      "branch": "qwen",
+      "seed": 2026,
+      "best_epoch": 2,
+      "configs": [
+        "configs/distillation.yaml"
+      ],
+      "directory": "weights/qwen/seed_2026",
+      "base_model": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "max_length": 1536,
+      "prompt_max_chars": 3000,
+      "source_sha256": "9370c6c80eb02576b01bc4f4b7c8c3a6e1caba302735a11da659d1163d0354f9",
+      "source_payload_sha256": "60a9f32e12ad975d75606502d16d41e7865d9f5fc9f779af895a0a9faffed528",
+      "tokenizer": "weights/qwen/tokenizer",
+      "source": "artifacts/students/qwen/seed_2026/policy_metadata.json",
+      "teacher_seed": 2026,
+      "objective": "soft_kl"
+    }
+  ],
+  "file_sha256": {
+    "configs/data.yaml": "6459a8524e00809e5844ce877c2f6fc6ba89b332503692c45d9e6df3e52699ec",
+    "configs/ordinal.yaml": "93302f2e558c7a4b081961f9cff5dcf4c2db1ee373bd897b2c3076d4f029e93f",
+    "configs/planner.yaml": "8c05d6959886365c09e964249d2c5300593426bf3dde075c623b9a0dd0b06ebb",
+    "configs/costs.yaml": "af6f54fd04b5495e70ccaccdeee94b8bbf817e39be50d87fbdcdb20300fb4cd8",
+    "configs/distillation.yaml": "5a9d2e27d20c9f92aeb478c3dfac0ffc12ab0c1b650851206576b87d4390c8f0",
+    "weights/ebm/seed_123/weights.pt": "6fbf89b2a788325b522775c216cf65bfb51952ac84c92b997d64dfaacb6ca281",
+    "weights/ebm/seed_2026/weights.pt": "e3022cbd9d3ae1c39abe39350cb5bd3dcf8c4c62af05eae05dfd61507725490d",
+    "weights/ebm/seed_42/weights.pt": "3beb619be74c4fdba7dbe68d0ada5360f7627c9c667476cf2f37df4e924e97cf",
+    "weights/mlp/seed_123/weights.pt": "eb856d2b733b50821d3c2b9fc9600f2429cb592ed6798c4d0c3fa8e1a91fe2f6",
+    "weights/mlp/seed_2026/weights.pt": "410c78cb2ccee6ea1d97c00048546785ea7c321b22d5f6691837ba34279c8c59",
+    "weights/mlp/seed_42/weights.pt": "700415818f32b4b00bec8760dd8e55a71bf5370b063c904e2302585187fdf7f3",
+    "weights/ordinal/calibration.json": "82a4255fb47a4fd29eaf6d312b7f5d18e0ae8a22bff0a16644fd4f7de5f4b216",
+    "weights/ordinal/preprocessing.json": "ae5e1a0df1fa21d8937a48856f5bf8a3fec9b112e680ccc1fc1ba7202f807c71",
+    "weights/ordinal/weights.pt": "2c45b713d39dc8ca285665fbca8030d9a58c9b7ddcb35a3d7d2c1ff30e829a80",
+    "weights/ordinal_oof/fold_0/calibration.json": "ddd155371a50dd9fb2004d76dd75868a84e4a59b896cf755c8646b0e20067dac",
+    "weights/ordinal_oof/fold_0/preprocessing.json": "a5fc6b544f9b7fa73c044f56894565ebac4333e1752ff6a9c7a9fd97df08e6c0",
+    "weights/ordinal_oof/fold_0/weights.pt": "4115c0749caca972323dbe04583b05e709429dc91d35fe358429c0bdac227fcd",
+    "weights/ordinal_oof/fold_1/calibration.json": "cf7d0cc4663d524dfe7d9c919314a11653c25b787e4f59a8aea993267f04e73f",
+    "weights/ordinal_oof/fold_1/preprocessing.json": "dae3a7099a19e692be4e4aadf281cbf5dbe09fadb634b21888097c5d49e57003",
+    "weights/ordinal_oof/fold_1/weights.pt": "fbab6b326ec86fd478da6178b6f84197f04746a052c0e228e7f4d40d3318be17",
+    "weights/ordinal_oof/fold_2/calibration.json": "4941c67acd46327ed063354b82f1d2d71693ef8178731bdd25dd8eb8b365df5b",
+    "weights/ordinal_oof/fold_2/preprocessing.json": "0f9b97ad05c8bc41d69d49f6bafeb278ee88e4ac29c5bc53e18e616415f4a0ee",
+    "weights/ordinal_oof/fold_2/weights.pt": "e025769a08d34710646e9c9f4695a46bbaa7a74b5d3453a8a125d788102025c1",
+    "weights/ordinal_oof/fold_3/calibration.json": "fd3ee050208f45786c1307ff65951fb3591791e0d4d5c17713c218d02ff84058",
+    "weights/ordinal_oof/fold_3/preprocessing.json": "c63794d0c880fb0cb2f7fb95db6bffb47fa08fa5ce28919a15cb9e4fd799acfd",
+    "weights/ordinal_oof/fold_3/weights.pt": "3b6c8130fb512a8730e345347178445392e62ac4778983053ccc029b1fde1d73",
+    "weights/ordinal_oof/fold_4/calibration.json": "c751107b8fb6a0aeb802b0fddfce8ae6ff2f16b278a9871bad58c6dc3b697555",
+    "weights/ordinal_oof/fold_4/preprocessing.json": "6f74ef91c7faf1b0688914f33e12277a290273e36e48768f5fda9f2344d95989",
+    "weights/ordinal_oof/fold_4/weights.pt": "c1350b3a3c3e74c4bb8127874c4305e0a507430a53817eb9cfceafff4cd7eec0",
+    "weights/qwen/seed_123/action_head.pt": "e8d37b41a259917555570676bb1412dba9f1398f07921924dff54911f7d0b1c6",
+    "weights/qwen/seed_123/policy_metadata.json": "b94489182b5bdc4261cb5e0883a64c8b1ac79007eee48aece21989c263813c97",
+    "weights/qwen/seed_123/qwen_adapter_or_backbone/adapter_config.json": "e66ddcd274fa444b0a9059c09d90992d2ee3d86fa815828ebe91da9967c7778d",
+    "weights/qwen/seed_123/qwen_adapter_or_backbone/adapter_model.safetensors": "3ca5cc4e9549c5aab992b7a6ecce5fadd2ef7df2cfe6fa94734d806e160875de",
+    "weights/qwen/seed_2026/action_head.pt": "3efdd27a9609f7bbcdbeb1cb42060c377b68c7ba879ea1c2c64c3f14a52aa194",
+    "weights/qwen/seed_2026/policy_metadata.json": "b94489182b5bdc4261cb5e0883a64c8b1ac79007eee48aece21989c263813c97",
+    "weights/qwen/seed_2026/qwen_adapter_or_backbone/adapter_config.json": "e66ddcd274fa444b0a9059c09d90992d2ee3d86fa815828ebe91da9967c7778d",
+    "weights/qwen/seed_2026/qwen_adapter_or_backbone/adapter_model.safetensors": "697e2de5abd50a97789b658f58bcda4b0af8e54de7fa7ec5ea05fb3654a5099e",
+    "weights/qwen/seed_42/action_head.pt": "f3012f157547be5c8e2981d52c904429f7ac7e276ff4b4e929fe72b4650663e7",
+    "weights/qwen/seed_42/policy_metadata.json": "b94489182b5bdc4261cb5e0883a64c8b1ac79007eee48aece21989c263813c97",
+    "weights/qwen/seed_42/qwen_adapter_or_backbone/adapter_config.json": "e66ddcd274fa444b0a9059c09d90992d2ee3d86fa815828ebe91da9967c7778d",
+    "weights/qwen/seed_42/qwen_adapter_or_backbone/adapter_model.safetensors": "33a641ba07fba1324f85e8529e3d291ac9dcf793fe1c00806261df378d1d06f1",
+    "weights/qwen/tokenizer/chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "weights/qwen/tokenizer/tokenizer.json": "9a44b96a5c63b5a3c35e7973689e56b7d093ca057e095217abe5137236870711",
+    "weights/qwen/tokenizer/tokenizer_config.json": "66e427c470fe580fe8c7b5725d857af23d8417e37fae62667ec698306a19987b",
+    "weights/reactive_mlp/seed_123/weights.pt": "81e4ac8ab1393ccec919280da51d7aa68a68796c557bd837649c4878eb13feeb",
+    "weights/reactive_mlp/seed_2026/weights.pt": "c735ec46e64e378e4ced06e536bbdde88e046fe465d337bd546c4677a8795abe",
+    "weights/reactive_mlp/seed_42/weights.pt": "a07c5be507a720e849a70ffb8e85710a28e30bb7edcdfd4bde105ca62780b673"
+  }
+}

@@ -1,0 +1,2 @@
+# Adds the GPU dependencies to the same base environment.
+-r train/distillation/requirements-qwen.txt

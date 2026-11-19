@@ -1,0 +1,53 @@
+schema_version: 1
+data_config: configs/data.yaml
+seed: 42
+device: auto
+precision: bf16
+
+model:
+  encoder_hidden_dim: 64
+  embedding_dim: 64
+  latent_dim: 64
+  dropout: 0.20
+  threshold_epsilon: 0.0001
+
+training:
+  epochs: 80
+  batch_size: 128
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  gradient_clip_norm: 5.0
+  early_stopping_patience: 12
+  masks_per_patient_per_epoch: 1
+  include_base_only_probability: 0.15
+  validation_states_per_patient: 8
+
+crossfit:
+  folds: 5
+  shuffle: true
+  require_oof_train_beliefs: true
+  enumerate_all_valid_subsets: true
+  max_states_per_patient: 128
+
+calibration:
+  method: ordinal_temperature_thresholds
+  fit_split: validation
+  max_iterations: 100
+  initial_temperature: 1.0
+  max_states_per_patient: 16
+  # Project-predeclared sanity gate (not an HTML-provided clinical threshold).
+  # A three-class uniform posterior has multiclass Brier ~= 0.667.
+  acceptance_gate:
+    version: validation_partial_v2
+    maximum_ece: 0.10
+    maximum_brier_score: 0.60
+    nll_tolerance: 1.0e-8
+
+artifacts:
+  output_dir: artifacts/ordinal
+  legacy_ordinal_dir: artifacts/legacy_ordinal
+  prepared_data: artifacts/data/prepared.joblib
+  preprocessor: artifacts/data/preprocessor.joblib
+  checkpoint: artifacts/ordinal/ordinal_belief.pt
+  calibration: artifacts/ordinal/temperature_calibration.json
+  crossfit_cache: artifacts/ordinal/crossfit_beliefs.joblib

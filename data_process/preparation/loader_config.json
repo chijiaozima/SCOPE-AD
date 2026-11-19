@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "input_path": ".",
+  "patient_id_column": "subject_id",
+  "label_column": "diagnose",
+  "label_regex": "mapped_label:\\s*(CN|MCI|AD)",
+  "labels": [
+    "CN",
+    "MCI",
+    "AD"
+  ],
+  "source_splits": {
+    "train": "train.csv",
+    "validation": "val.csv",
+    "test": "test.csv"
+  },
+  "locked_split_manifest": "split_ids_seed42.csv",
+  "baseline_visit_column": "visit",
+  "baseline_visit_priority": [
+    "bl",
+    "sc"
+  ],
+  "base_modality": {
+    "name": "demographic",
+    "source_columns": [
+      "demographic"
+    ]
+  },
+  "acquisition_modalities": [
+    {
+      "name": "cognitive",
+      "source_columns": [
+        "cognitive_scales"
+      ]
+    },
+    {
+      "name": "apoe",
+      "source_columns": [
+        "apoe_genotype"
+      ]
+    },
+    {
+      "name": "blood",
+      "source_columns": [
+        "blood_biomarkers"
+      ]
+    },
+    {
+      "name": "csf",
+      "source_columns": [
+        "csf_biomarkers"
+      ]
+    },
+    {
+      "name": "structural_mri",
+      "source_columns": [
+        "structural_mri"
+      ]
+    },
+    {
+      "name": "amyloid_pet",
+      "source_columns": [
+        "amyloid_pet"
+      ]
+    },
+    {
+      "name": "tau_pet",
+      "source_columns": [
+        "tau_pet"
+      ]
+    }
+  ],
+  "unavailable_patterns": [
+    "not available",
+    "unavailable",
+    "missing",
+    "no data"
+  ],
+  "leakage_columns": [
+    "DX",
+    "DX_bl",
+    "diagnosis",
+    "diagnose",
+    "group",
+    "clinical_status",
+    "final_label",
+    "conversion_label",
+    "future_diagnosis"
+  ],
+  "leakage_value_patterns": [
+    "\\balzheimer(?:'s)?(?: disease)?\\b",
+    "\\bmild cognitive impairment\\b",
+    "\\bcn\\b",
+    "\\bmci\\b",
+    "\\bad\\b",
+    "\\bdementia\\b",
+    "\\bcognitively normal\\b",
+    "\\bnormal cognition\\b"
+  ]
+}

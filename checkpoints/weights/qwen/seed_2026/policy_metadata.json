@@ -1,0 +1,15 @@
+{
+  "actions": [
+    "REQUEST_COGNITIVE",
+    "REQUEST_APOE",
+    "REQUEST_BLOOD",
+    "REQUEST_CSF",
+    "REQUEST_STRUCTURAL_MRI",
+    "REQUEST_AMYLOID_PET",
+    "REQUEST_TAU_PET",
+    "DIAGNOSE_CN",
+    "DIAGNOSE_MCI",
+    "DIAGNOSE_AD"
+  ],
+  "hidden_size": 4096
+}

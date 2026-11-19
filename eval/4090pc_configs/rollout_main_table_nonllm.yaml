@@ -1,0 +1,31 @@
+include:
+  - costs.yaml
+
+artifacts:
+  planner_checkpoint_dir: artifacts/planner/checkpoints
+  mlp_checkpoint_dir: artifacts/students/mlp
+  reactive_mlp_checkpoint_dir: artifacts/students/reactive_mlp
+  trajectory_dir: artifacts/rollouts/main_table_nonllm
+  audit_dir: artifacts/audit/main_table_nonllm
+
+rollout:
+  splits: [validation, test]
+  budgets_usd: [500, 1000, 2000, 4000, 8520]
+  max_acquisitions: 7
+  stop_confidence_threshold: 0.8
+  use_replanning: true
+  deterministic: true
+  methods:
+    - base_only
+    - full_modality
+    - random
+    - fixed_low_to_high
+    - global_best_fixed_subset
+    - greedy_uncertainty
+    - greedy_cost_adjusted_h1
+    - reactive_mlp
+    - soft_ebm
+    - hindsight_oracle_dp
+    - mlp_distilled
+
+seeds: [42, 123, 2026]

@@ -1,0 +1,68 @@
+{
+  "host": "4090pc",
+  "project": "adni_soft_ebm_planner",
+  "config_sha256": "5a9d2e27d20c9f92aeb478c3dfac0ffc12ab0c1b650851206576b87d4390c8f0",
+  "completed_stage_utc": {
+    "generate_planner_trajectories": "2026-08-09T21:42:27.191728+00:00",
+    "train_mlp_student": "2026-08-09T21:49:30.599115+00:00",
+    "train_llm_student_soft_kl": "2026-08-11T18:12:45.705730+00:00"
+  },
+  "seed_matched_students": true,
+  "training_budgets_usd": [
+    500,
+    1000,
+    2000,
+    4000,
+    8520
+  ],
+  "trajectory_records": 56985,
+  "historical_prompts_rebuilt_exactly_with_packaged_prompt_builder": 56985,
+  "unique_patients_by_split": {
+    "train": 1552,
+    "validation": 333
+  },
+  "rows_by_split": {
+    "train": 46939,
+    "validation": 10046
+  },
+  "test_rows": 0,
+  "all_three_student_manifests_match_teacher_and_trajectory_digests": true,
+  "students": {
+    "mlp": {
+      "objective": "soft_kl",
+      "best_epoch_by_teacher_seed": {
+        "42": 100,
+        "123": 48,
+        "2026": 100
+      }
+    },
+    "reactive_mlp": {
+      "objective": "hard_direct_action_classification",
+      "best_epoch_by_teacher_seed": {
+        "42": 6,
+        "123": 54,
+        "2026": 21
+      }
+    },
+    "qwen": {
+      "objective": "soft_kl",
+      "best_epoch_by_teacher_seed": {
+        "42": 1,
+        "123": 3,
+        "2026": 2
+      },
+      "base_model_id": "Qwen/Qwen3.5-9B",
+      "base_model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "load_in_4bit": true,
+      "lora_target_modules": "all-linear",
+      "max_length": 1536,
+      "max_observed_prompt_tokens": 1462
+    }
+  },
+  "qwen_hard_action": {
+    "status": "attempted_incomplete",
+    "job_exit_code": 139,
+    "last_recorded_progress": "objective=hard_action seed=42 epoch=3 batch=13500/15659 train_loss=0.043260",
+    "completed_manifest_present": false
+  }
+}

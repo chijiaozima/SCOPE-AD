@@ -1,0 +1,18 @@
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv/
+cdm-runs/
+teacher-example-run/
+student-example-run/
+student-example-all/
+
+# Private ADNI inputs and Step 1 outputs can live beside the checkout.
+All_Subjects_*.csv
+DATADIC.csv
+split_ids_seed42.csv
+train.csv
+val.csv
+test.csv
+!data_process/pseudo_dataset/*.csv

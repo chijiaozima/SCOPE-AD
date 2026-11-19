@@ -1,0 +1,35 @@
+include:
+  - costs.yaml
+
+artifacts:
+  subset_states: artifacts/states/subset_states.parquet
+  bellman_targets: artifacts/planner/soft_bellman_targets.parquet
+  checkpoint_dir: artifacts/planner/checkpoints
+  audit_dir: artifacts/audit
+
+planner:
+  horizon: 7
+  gamma: 1.0
+  energy_temperature: 0.3
+  bellman_mode: soft
+  td_loss: huber
+  ranking_kl_weight: 1.0
+  target_update_tau: 0.01
+  max_acquisitions: 7
+  budgets_usd: [500, 1000, 2000, 4000, 8520]
+  use_replanning: true
+  belief_mode: ordinal
+  hidden_dims: [256, 256, 128]
+  dropout: 0.1
+  batch_size: 512
+  max_epochs: 150
+  early_stopping_patience: 20
+  learning_rate: 0.001
+  weight_decay: 0.0001
+
+ordinal_risk:
+  classification_weight: 1.0
+  distance_weight: 0.5
+
+seeds: [42, 123, 2026]
+device: cuda

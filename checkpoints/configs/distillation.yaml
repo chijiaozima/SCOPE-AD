@@ -1,0 +1,42 @@
+artifacts:
+  planner_trajectories: artifacts/trajectories/planner_records.parquet
+  mlp_checkpoint_dir: artifacts/students/mlp
+  llm_checkpoint_dir: artifacts/students/qwen
+
+distillation:
+  temperature: 1.0
+  objective: soft_kl
+  hard_action_weight: 0.0
+  energy_margin_weight: 0.0
+  batch_size: 256
+  max_epochs: 100
+  early_stopping_patience: 15
+  learning_rate: 0.001
+
+mlp:
+  hidden_dims: [256, 128]
+  dropout: 0.1
+
+llm:
+  model: Qwen/Qwen3.5-9B
+  revision: c202236235762e1c871ad0ccb60c8ee5ba337b9a
+  local_files_only: true
+  trust_remote_code: false
+  load_in_4bit: true
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  target_modules: all-linear
+  torch_dtype: bfloat16
+  device_map: {"": 0}
+  # Full verified trajectory corpus requires at most 1,462 tokens.
+  max_length: 1536
+  use_action_head: true
+  train_objective: soft_kl
+  batch_size: 1
+  max_epochs: 3
+  early_stopping_patience: 1
+  learning_rate: 0.0002
+  gradient_accumulation_steps: 16
+
+seeds: [42, 123, 2026]

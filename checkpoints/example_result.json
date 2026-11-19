@@ -1,0 +1,79 @@
+{
+  "weights": "4090pc research run",
+  "dataset": "Step 1 synthetic",
+  "patient": "SYN-0005",
+  "ordinal_seed": 42,
+  "policy_seed": 42,
+  "budget_usd": 500.0,
+  "observed_modalities": [
+    "demographic"
+  ],
+  "state_dimension": 87,
+  "ordinal_posterior": {
+    "CN": 0.05875838175415993,
+    "MCI": 0.5896845459938049,
+    "AD": 0.35155707597732544
+  },
+  "policies": {
+    "ebm": {
+      "action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.519513726234436,
+        "REQUEST_APOE": 0.18357321619987488,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.008514820598065853,
+        "DIAGNOSE_MCI": 0.2321670949459076,
+        "DIAGNOSE_AD": 0.05623110011219978
+      }
+    },
+    "mlp": {
+      "action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.5072361826896667,
+        "REQUEST_APOE": 0.19042882323265076,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.009133368730545044,
+        "DIAGNOSE_MCI": 0.23833756148815155,
+        "DIAGNOSE_AD": 0.0548640638589859
+      }
+    },
+    "reactive_mlp": {
+      "action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.999154806137085,
+        "REQUEST_APOE": 2.8994152671657503e-05,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 1.8912485757027753e-05,
+        "DIAGNOSE_MCI": 0.0006836645770817995,
+        "DIAGNOSE_AD": 0.0001135823258664459
+      }
+    },
+    "qwen": {
+      "action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.5074620842933655,
+        "REQUEST_APOE": 0.1837562471628189,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.010749023407697678,
+        "DIAGNOSE_MCI": 0.23390360176563263,
+        "DIAGNOSE_AD": 0.06412900984287262
+      }
+    }
+  }
+}

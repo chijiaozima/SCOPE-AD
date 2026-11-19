@@ -1,0 +1,61 @@
+{
+  "host": "it106365",
+  "project": "4090pc/adni_soft_ebm_planner",
+  "research_run_created_utc": "2026-08-09T21:38:50.673424+00:00",
+  "checked_on": "2026-11-19",
+  "config_file_sha256": {
+    "costs": "af6f54fd04b5495e70ccaccdeee94b8bbf817e39be50d87fbdcdb20300fb4cd8",
+    "data": "6459a8524e00809e5844ce877c2f6fc6ba89b332503692c45d9e6df3e52699ec",
+    "experiments": "26b9aeb33df07cfb06de4ba9ee7718f13cdf14e6e246b0618e8d922ab52828f1",
+    "ordinal": "93302f2e558c7a4b081961f9cff5dcf4c2db1ee373bd897b2c3076d4f029e93f",
+    "planner": "8c05d6959886365c09e964249d2c5300593426bf3dde075c623b9a0dd0b06ebb"
+  },
+  "data_and_ordinal_yaml_match_training_summary": true,
+  "resolved_planner_settings_match_recorded_run": true,
+  "canonical_state_encoder_implementation_matches_recorded_run": true,
+  "split_patient_counts": {
+    "test": 333,
+    "train": 1552,
+    "validation": 333
+  },
+  "split_manifest_sha256": "b8fbd61d5ba4e4d3455958dd118108c44b4ac3d94f151f1cdb512c9fc5c528f7",
+  "ordinal_best_epoch": 22,
+  "calibration_method": "ordinal_temperature_thresholds",
+  "calibration_thresholds": {
+    "maximum_brier_score": 0.6,
+    "maximum_ece": 0.1,
+    "nll_tolerance": 1e-08
+  },
+  "ebm_seeds_and_validation_selected_epochs": [
+    {
+      "seed": 42,
+      "best_epoch": 14
+    },
+    {
+      "seed": 123,
+      "best_epoch": 8
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 11
+    }
+  ],
+  "training_budgets_usd": [
+    500.0,
+    1000.0,
+    2000.0,
+    4000.0,
+    8520.0
+  ],
+  "teacher_state_dim": 87,
+  "action_count": 10,
+  "terminal_source": "calibrated_belief_risk",
+  "fit_split": "train",
+  "selection_split": "validation",
+  "test_used_for_training_or_selection": false,
+  "audit_status": {
+    "cache_subset_states": "completed",
+    "build_soft_bellman_targets": "completed",
+    "train_ebm_planner": "completed"
+  }
+}

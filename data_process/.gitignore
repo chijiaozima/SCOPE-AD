@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+.DS_Store
+*.csv
+*.tsv
+*.parquet
+*.joblib
+*.zip
+!pseudo_dataset/train.csv
+!pseudo_dataset/val.csv
+!pseudo_dataset/test.csv
+!pseudo_dataset/split_ids_seed42.csv

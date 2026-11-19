@@ -1,0 +1,5 @@
+# Run all three teacher seeds for one pass over the synthetic trajectories.
+distillation:
+  max_epochs: 1
+llm:
+  max_epochs: 1

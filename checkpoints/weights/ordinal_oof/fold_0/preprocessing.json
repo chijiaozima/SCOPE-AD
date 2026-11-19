@@ -1,0 +1,524 @@
+{
+  "demographic": {
+    "base_present": {
+      "kind": "numeric",
+      "median": 1.0,
+      "mean": 1.0,
+      "scale": 1.0,
+      "levels": []
+    },
+    "demographic__birth_year": {
+      "kind": "numeric",
+      "median": 1943.0,
+      "mean": 1943.030620467365,
+      "scale": 11.261410595109833,
+      "levels": []
+    },
+    "demographic__education_years": {
+      "kind": "numeric",
+      "median": 16.0,
+      "mean": 16.087832393231267,
+      "scale": 2.6564543309683266,
+      "levels": []
+    },
+    "demographic__ethnicity": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "Not Hispanic or Latino",
+        "Hispanic or Latino",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "demographic__marital_status": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "Married",
+        "Divorced",
+        "Widowed",
+        "Never married",
+        "Domestic Partnership",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "demographic__occupation": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "__MISSING__",
+        "Middle Professional Occupations/ Small Business Owners",
+        "Professional and Higher Executive Occupations, Chief Executives",
+        "Managers",
+        "Aides / Assistants / Clerks",
+        "Support Personnel, Drafters, Technicians",
+        "Laborers",
+        "Arts, Design, Entertainment, Sports Occupations \u2013 Non-Professional",
+        "__OTHER__"
+      ]
+    },
+    "demographic__race": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "White",
+        "Black or African American",
+        "Asian",
+        "More than one race",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "demographic__retirement_status": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "Yes",
+        "No",
+        "Not Applicable",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "demographic__sex": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "Female",
+        "Male",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "demographic__work_history_score": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "__MISSING__",
+        "Yes",
+        "No",
+        "__OTHER__"
+      ]
+    }
+  },
+  "cognitive": {
+    "cognitive_scales__adas_cog_13_total": {
+      "kind": "numeric",
+      "median": 13.0,
+      "mean": 15.03253021756648,
+      "scale": 9.336176906989898,
+      "levels": []
+    },
+    "cognitive_scales__faq_total": {
+      "kind": "numeric",
+      "median": 0.0,
+      "mean": 3.353746978243352,
+      "scale": 5.705059820513853,
+      "levels": []
+    },
+    "cognitive_scales__npi_total": {
+      "kind": "numeric",
+      "median": 0.0,
+      "mean": 2.588235294117647,
+      "scale": 5.824355503474824,
+      "levels": []
+    }
+  },
+  "apoe": {
+    "apoe_genotype__apoe_genotype": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "3/3",
+        "3/4",
+        "4/4",
+        "2/3",
+        "__MISSING__",
+        "2/4",
+        "__OTHER__"
+      ]
+    }
+  },
+  "blood": {
+    "blood_biomarkers__c2n_apoe_result": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "__MISSING__",
+        "E3/E3",
+        "E3/E4",
+        "E4/E4",
+        "E2/E3",
+        "E2/E4",
+        "__OTHER__"
+      ]
+    },
+    "blood_biomarkers__c2n_aps2_score": {
+      "kind": "numeric",
+      "median": 11.0,
+      "mean": 13.486704270749396,
+      "scale": 13.24905636098135,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_amyloid_beta_40": {
+      "kind": "numeric",
+      "median": 441.384,
+      "mean": 443.22491539081386,
+      "scale": 34.470952180643664,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_amyloid_beta_42": {
+      "kind": "numeric",
+      "median": 44.824,
+      "mean": 45.099632554391626,
+      "scale": 3.908970143728999,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_amyloid_beta_42_40_ratio": {
+      "kind": "numeric",
+      "median": 0.103,
+      "mean": 0.10302659145850121,
+      "scale": 0.00604389813440305,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_non_phosphorylated_tau217": {
+      "kind": "numeric",
+      "median": 51.23,
+      "mean": 52.094367445608384,
+      "scale": 9.49814966790777,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_p_tau217": {
+      "kind": "numeric",
+      "median": 0.65,
+      "mean": 0.8886929895245771,
+      "scale": 1.0636356985820634,
+      "levels": []
+    },
+    "blood_biomarkers__c2n_plasma_p_tau217_non_phosphorylated_tau217_ratio": {
+      "kind": "numeric",
+      "median": 1.85,
+      "mean": 2.1432070910556007,
+      "scale": 1.5870846670397323,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_amyloid_beta_40_ab40_f": {
+      "kind": "numeric",
+      "median": 292.74,
+      "mean": 295.9716921837228,
+      "scale": 56.464145939429116,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_amyloid_beta_42_40_ratio_ab42_ab40_f": {
+      "kind": "numeric",
+      "median": 0.08654999999999999,
+      "mean": 0.08786232846091863,
+      "scale": 0.019799978467103446,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_amyloid_beta_42_ab42_f": {
+      "kind": "numeric",
+      "median": 25.665,
+      "mean": 25.89387187751813,
+      "scale": 4.657148653228319,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_gfap_gfap_f": {
+      "kind": "numeric",
+      "median": 52.9,
+      "mean": 54.37872683319903,
+      "scale": 15.378669111759635,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_neurofilament_light_nfl_f": {
+      "kind": "numeric",
+      "median": 19.68,
+      "mean": 20.342941176470593,
+      "scale": 8.068103620004596,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_p_tau217_amyloid_beta_42_ratio_pt217_ab42_f": {
+      "kind": "numeric",
+      "median": 0.0054800000000000005,
+      "mean": 0.008497909063658339,
+      "scale": 0.012645827763135274,
+      "levels": []
+    },
+    "blood_biomarkers__fujirebio_plasma_p_tau217_pt217_f": {
+      "kind": "numeric",
+      "median": 0.142,
+      "mean": 0.2007719580983078,
+      "scale": 0.21621281049734356,
+      "levels": []
+    },
+    "blood_biomarkers__quanterix_plasma_gfap_gfap_q": {
+      "kind": "numeric",
+      "median": 142.85000000000002,
+      "mean": 153.36737308622082,
+      "scale": 61.69683937013721,
+      "levels": []
+    },
+    "blood_biomarkers__quanterix_plasma_neurofilament_light_nfl_q": {
+      "kind": "numeric",
+      "median": 17.15,
+      "mean": 18.486889605157135,
+      "scale": 9.597724498392283,
+      "levels": []
+    }
+  },
+  "csf": {
+    "csf_biomarkers__csf_amyloid_beta_40": {
+      "kind": "numeric",
+      "median": 17670.0,
+      "mean": 17745.05237711523,
+      "scale": 2473.292738733323,
+      "levels": []
+    },
+    "csf_biomarkers__csf_amyloid_beta_42": {
+      "kind": "numeric",
+      "median": 883.9,
+      "mean": 1017.7676067687349,
+      "scale": 521.617824937318,
+      "levels": []
+    },
+    "csf_biomarkers__csf_phosphorylated_tau": {
+      "kind": "numeric",
+      "median": 23.71,
+      "mean": 26.26069298952458,
+      "scale": 12.434957632284217,
+      "levels": []
+    },
+    "csf_biomarkers__csf_total_tau": {
+      "kind": "numeric",
+      "median": 253.8,
+      "mean": 275.48129734085416,
+      "scale": 110.50210810394533,
+      "levels": []
+    }
+  },
+  "structural_mri": {
+    "structural_mri__ad_signature_cortical_thickness": {
+      "kind": "numeric",
+      "median": 2.548875,
+      "mean": 2.527004566210024,
+      "scale": 0.13901267701704353,
+      "levels": []
+    },
+    "structural_mri__entorhinal_thickness": {
+      "kind": "numeric",
+      "median": 3.14,
+      "mean": 3.0692095084609186,
+      "scale": 0.37806169478898616,
+      "levels": []
+    },
+    "structural_mri__entorhinal_volume_icv": {
+      "kind": "numeric",
+      "median": 0.00235023795311,
+      "mean": 0.002351450421057703,
+      "scale": 0.0005296534504234129,
+      "levels": []
+    },
+    "structural_mri__hippocampal_volume_icv": {
+      "kind": "numeric",
+      "median": 0.0049882180881,
+      "mean": 0.004895757371002201,
+      "scale": 0.0008742368303395321,
+      "levels": []
+    },
+    "structural_mri__medial_temporal_lobe_thickness": {
+      "kind": "numeric",
+      "median": 2.868,
+      "mean": 2.818109186140209,
+      "scale": 0.27549626667794885,
+      "levels": []
+    },
+    "structural_mri__medial_temporal_lobe_volume_icv": {
+      "kind": "numeric",
+      "median": 0.00993821625545,
+      "mean": 0.009798153154345375,
+      "scale": 0.0016235451436903455,
+      "levels": []
+    },
+    "structural_mri__posterior_temporoparietal_thickness": {
+      "kind": "numeric",
+      "median": 2.2435,
+      "mean": 2.2349686543110394,
+      "scale": 0.12614656540492517,
+      "levels": []
+    },
+    "structural_mri__temporal_neocortex_thickness": {
+      "kind": "numeric",
+      "median": 2.7917,
+      "mean": 2.76812691377921,
+      "scale": 0.1661711130864793,
+      "levels": []
+    }
+  },
+  "amyloid_pet": {
+    "amyloid_pet__amyloid_centiloids": {
+      "kind": "numeric",
+      "median": 16.0,
+      "mean": 31.53102336825141,
+      "scale": 40.523319811060965,
+      "levels": []
+    },
+    "amyloid_pet__amyloid_pet_status_composite_reference": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "amyloid negative",
+        "amyloid positive",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "amyloid_pet__amyloid_summary_suvr": {
+      "kind": "numeric",
+      "median": 1.0699999999999998,
+      "mean": 1.1649161966156325,
+      "scale": 0.2328288551992966,
+      "levels": []
+    },
+    "amyloid_pet__cerebellum_cortex_suvr": {
+      "kind": "numeric",
+      "median": 0.859,
+      "mean": 0.8600104754230461,
+      "scale": 0.02267350265527459,
+      "levels": []
+    },
+    "amyloid_pet__composite_reference_suvr": {
+      "kind": "numeric",
+      "median": 1.474,
+      "mean": 1.4735535858178888,
+      "scale": 0.08026953329035857,
+      "levels": []
+    },
+    "amyloid_pet__cross_sectional_amyloid_pet_status_cerebellum_reference": {
+      "kind": "categorical",
+      "median": 0.0,
+      "mean": 0.0,
+      "scale": 1.0,
+      "levels": [
+        "amyloid negative",
+        "amyloid positive",
+        "__MISSING__",
+        "__OTHER__"
+      ]
+    },
+    "amyloid_pet__entorhinal_cortex_suvr": {
+      "kind": "numeric",
+      "median": 0.919,
+      "mean": 0.9352449637389203,
+      "scale": 0.10577164192025737,
+      "levels": []
+    },
+    "amyloid_pet__eroded_subcortical_white_matter_suvr": {
+      "kind": "numeric",
+      "median": 1.909,
+      "mean": 1.9184351329572924,
+      "scale": 0.15701929193718112,
+      "levels": []
+    },
+    "amyloid_pet__hippocampus_suvr": {
+      "kind": "numeric",
+      "median": 1.085,
+      "mean": 1.0860950846091861,
+      "scale": 0.0820208734071338,
+      "levels": []
+    },
+    "amyloid_pet__posterior_cingulate_cortex_suvr": {
+      "kind": "numeric",
+      "median": 1.1665,
+      "mean": 1.2530906526994359,
+      "scale": 0.25160341341139825,
+      "levels": []
+    },
+    "amyloid_pet__precuneus_cortex_suvr": {
+      "kind": "numeric",
+      "median": 1.132,
+      "mean": 1.2394673650282029,
+      "scale": 0.27077468909567953,
+      "levels": []
+    },
+    "amyloid_pet__whole_cerebellum_suvr": {
+      "kind": "numeric",
+      "median": 1.0,
+      "mean": 1.0,
+      "scale": 1.0,
+      "levels": []
+    }
+  },
+  "tau_pet": {
+    "tau_pet__entorhinal_cortex_suvr": {
+      "kind": "numeric",
+      "median": 1.178,
+      "mean": 1.2210056406124095,
+      "scale": 0.22215438976811586,
+      "levels": []
+    },
+    "tau_pet__eroded_subcortical_white_matter_suvr": {
+      "kind": "numeric",
+      "median": 1.126,
+      "mean": 1.1218162771958096,
+      "scale": 0.11067564136529853,
+      "levels": []
+    },
+    "tau_pet__hippocampus_suvr": {
+      "kind": "numeric",
+      "median": 1.231,
+      "mean": 1.2318323932312651,
+      "scale": 0.15913663906676753,
+      "levels": []
+    },
+    "tau_pet__inferior_cerebellum_suvr": {
+      "kind": "numeric",
+      "median": 1.0,
+      "mean": 1.0,
+      "scale": 1.0,
+      "levels": []
+    },
+    "tau_pet__posterior_cingulate_cortex_suvr": {
+      "kind": "numeric",
+      "median": 1.09,
+      "mean": 1.1034931506849315,
+      "scale": 0.14709287684054825,
+      "levels": []
+    },
+    "tau_pet__precuneus_cortex_suvr": {
+      "kind": "numeric",
+      "median": 1.106,
+      "mean": 1.128194198227236,
+      "scale": 0.19318523132088908,
+      "levels": []
+    },
+    "tau_pet__tau_meta_temporal_suvr": {
+      "kind": "numeric",
+      "median": 1.189,
+      "mean": 1.2298114423851731,
+      "scale": 0.23145221019981735,
+      "levels": []
+    }
+  }
+}

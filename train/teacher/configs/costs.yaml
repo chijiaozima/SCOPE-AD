@@ -1,0 +1,16 @@
+cost:
+  source: raw_usd
+  transform: normalized_log
+  lambda_usd: 1.0
+  lambda_step: 0.0
+  lambda_invasiveness: 0.0
+  lambda_time: 0.0
+  raw_usd:
+    cognitive: 50
+    apoe: 283
+    blood: 232
+    csf: 574
+    structural_mri: 1431
+    amyloid_pet: 2975
+    tau_pet: 2975
+  full_reference_usd: 8520

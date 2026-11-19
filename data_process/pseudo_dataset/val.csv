@@ -1,0 +1,168 @@
+row_id,subject_id,visit,cognitive_scales,demographic,medical_history,apoe_genotype,blood_biomarkers,csf_biomarkers,structural_mri,amyloid_pet,tau_pet,diagnose
+5,SYN-0005,bl,"Cognitive scales source_visit=bl:
+- MMSE: 25
+- FAQ total: 4","Demographic source_visit=bl:
+- birth_year: 1954
+- education_years: 9",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/3",Blood biomarkers: not available.,"CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 937","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0028
+- entorhinal_thickness: 3.0591
+- entorhinal_volume_icv: 0.0041
+- medial_temporal_lobe_volume_icv: 0.0062
+- medial_temporal_lobe_thickness: 2.206
+- ad_signature_cortical_thickness: 2.1639
+- temporal_neocortex_thickness: 2.2894
+- posterior_temporoparietal_thickness: 2.801","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 1.191",Tau PET: not available.,"Diagnose source_visit=current:
+- raw_DIAGNOSIS: 2
+- mapped_label: MCI"
+12,SYN-0012,bl,"Cognitive scales source_visit=bl:
+- MMSE: 20
+- FAQ total: 9","Demographic source_visit=bl:
+- birth_year: 1963
+- education_years: 8",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 2/3","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 151","CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 1022","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0042
+- entorhinal_thickness: 3.0106
+- entorhinal_volume_icv: 0.0021
+- medial_temporal_lobe_volume_icv: 0.0062
+- medial_temporal_lobe_thickness: 3.0683
+- ad_signature_cortical_thickness: 2.0614
+- temporal_neocortex_thickness: 2.1158
+- posterior_temporoparietal_thickness: 2.1611","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 1.14","Tau PET source_visit=bl:
+- tau meta-temporal SUVR: 1.424","Diagnose source_visit=current:
+- raw_DIAGNOSIS: 3
+- mapped_label: AD"
+19,SYN-0019,bl,"Cognitive scales source_visit=bl:
+- MMSE: 23
+- FAQ total: 3","Demographic source_visit=bl:
+- birth_year: 1954
+- education_years: 9",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/4","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 175","CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 698","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0069
+- entorhinal_thickness: 3.2876
+- entorhinal_volume_icv: 0.0021
+- medial_temporal_lobe_volume_icv: 0.0053
+- medial_temporal_lobe_thickness: 1.974
+- ad_signature_cortical_thickness: 3.0641
+- temporal_neocortex_thickness: 2.6492
+- posterior_temporoparietal_thickness: 2.6939",Amyloid PET: not available.,Tau PET: not available.,"Diagnose source_visit=current:
+- raw_DIAGNOSIS: 1
+- mapped_label: CN"
+22,SYN-0022,bl,"Cognitive scales source_visit=bl:
+- MMSE: 25
+- FAQ total: 7","Demographic source_visit=bl:
+- birth_year: 1945
+- education_years: 13",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/4","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 84",CSF biomarkers: not available.,"Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0026
+- entorhinal_thickness: 2.9942
+- entorhinal_volume_icv: 0.0059
+- medial_temporal_lobe_volume_icv: 0.0025
+- medial_temporal_lobe_thickness: 2.2544
+- ad_signature_cortical_thickness: 2.9769
+- temporal_neocortex_thickness: 2.3186
+- posterior_temporoparietal_thickness: 3.0517",Amyloid PET: not available.,"Tau PET source_visit=bl:
+- tau meta-temporal SUVR: 1.342","Diagnose source_visit=current:
+- raw_DIAGNOSIS: 1
+- mapped_label: CN"
+27,SYN-0027,bl,"Cognitive scales source_visit=bl:
+- MMSE: 18
+- FAQ total: 7","Demographic source_visit=bl:
+- birth_year: 1963
+- education_years: 11",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/3","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 102","CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 550","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0028
+- entorhinal_thickness: 2.937
+- entorhinal_volume_icv: 0.0064
+- medial_temporal_lobe_volume_icv: 0.0023
+- medial_temporal_lobe_thickness: 2.4266
+- ad_signature_cortical_thickness: 3.2585
+- temporal_neocortex_thickness: 2.3431
+- posterior_temporoparietal_thickness: 3.1802","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 0.976","Tau PET source_visit=bl:
+- tau meta-temporal SUVR: 1.364","Diagnose source_visit=current:
+- raw_DIAGNOSIS: 3
+- mapped_label: AD"
+35,SYN-0035,bl,"Cognitive scales source_visit=bl:
+- MMSE: 18
+- FAQ total: 8","Demographic source_visit=bl:
+- birth_year: 1946
+- education_years: 11",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/3","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 115","CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 1116","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0042
+- entorhinal_thickness: 3.0523
+- entorhinal_volume_icv: 0.0089
+- medial_temporal_lobe_volume_icv: 0.0021
+- medial_temporal_lobe_thickness: 2.0006
+- ad_signature_cortical_thickness: 2.0417
+- temporal_neocortex_thickness: 3.1185
+- posterior_temporoparietal_thickness: 2.666","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 0.707",Tau PET: not available.,"Diagnose source_visit=current:
+- raw_DIAGNOSIS: 2
+- mapped_label: MCI"
+37,SYN-0037,bl,"Cognitive scales source_visit=bl:
+- MMSE: 19
+- FAQ total: 1","Demographic source_visit=bl:
+- birth_year: 1957
+- education_years: 20",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/3",Blood biomarkers: not available.,"CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 743","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0073
+- entorhinal_thickness: 2.5783
+- entorhinal_volume_icv: 0.0087
+- medial_temporal_lobe_volume_icv: 0.003
+- medial_temporal_lobe_thickness: 2.8048
+- ad_signature_cortical_thickness: 2.5897
+- temporal_neocortex_thickness: 3.1007
+- posterior_temporoparietal_thickness: 2.3585",Amyloid PET: not available.,"Tau PET source_visit=bl:
+- tau meta-temporal SUVR: 1.571","Diagnose source_visit=current:
+- raw_DIAGNOSIS: 1
+- mapped_label: CN"
+53,SYN-0053,bl,"Cognitive scales source_visit=bl:
+- MMSE: 17
+- FAQ total: 3","Demographic source_visit=bl:
+- birth_year: 1946
+- education_years: 12",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/4",Blood biomarkers: not available.,"CSF biomarkers source_visit=bl:
+- CSF amyloid beta 42: 748","Structural MRI AD composites:
+- hippocampal_volume_icv: 0.0048
+- entorhinal_thickness: 2.4817
+- entorhinal_volume_icv: 0.0073
+- medial_temporal_lobe_volume_icv: 0.0033
+- medial_temporal_lobe_thickness: 2.895
+- ad_signature_cortical_thickness: 2.5439
+- temporal_neocortex_thickness: 2.1337
+- posterior_temporoparietal_thickness: 2.1221","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 0.91",Tau PET: not available.,"Diagnose source_visit=current:
+- raw_DIAGNOSIS: 2
+- mapped_label: MCI"
+54,SYN-0054,bl,"Cognitive scales source_visit=bl:
+- MMSE: 25
+- FAQ total: 1","Demographic source_visit=bl:
+- birth_year: 1959
+- education_years: 11",Medical history: not available.,"APOE genotype source_visit=bl:
+- APOE genotype: 3/3","Blood biomarkers source_visit=bl:
+- Quanterix plasma GFAP (GFAP_Q): 152",CSF biomarkers: not available.,"Structural MRI AD composites:
+- hippocampal_volume_icv: 0.009
+- entorhinal_thickness: 3.0972
+- entorhinal_volume_icv: 0.0075
+- medial_temporal_lobe_volume_icv: 0.0043
+- medial_temporal_lobe_thickness: 2.4697
+- ad_signature_cortical_thickness: 1.8578
+- temporal_neocortex_thickness: 3.2589
+- posterior_temporoparietal_thickness: 3.1031","Amyloid PET source_visit=bl:
+- amyloid summary SUVR: 1.075",Tau PET: not available.,"Diagnose source_visit=current:
+- raw_DIAGNOSIS: 3
+- mapped_label: AD"

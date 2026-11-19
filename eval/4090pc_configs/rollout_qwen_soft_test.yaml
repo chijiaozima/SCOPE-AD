@@ -1,0 +1,18 @@
+# Effective settings reconstructed from the 4090pc qwen_soft_test run audit.
+# Load this from configs/ in a private copy of the original research tree.
+include: [costs.yaml]
+artifacts:
+  planner_checkpoint_dir: artifacts/planner/checkpoints
+  llm_soft_checkpoint_dir: artifacts/students/qwen
+  trajectory_dir: artifacts/rollouts/qwen_soft_test
+  audit_dir: artifacts/audit/qwen_soft_test
+rollout:
+  splits: [test]
+  budgets_usd: [500, 1000, 2000, 4000, 8520]
+  methods: [llm_soft]
+  max_acquisitions: 7
+  use_replanning: true
+  deterministic: true
+  require_planner_teacher: true
+  compute_oracle_metrics: true
+seeds: [42, 123, 2026]

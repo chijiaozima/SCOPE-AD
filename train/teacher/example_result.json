@@ -1,0 +1,137 @@
+{
+  "profile": "synthetic_cpu",
+  "split_counts": {
+    "test": 9,
+    "train": 42,
+    "validation": 9
+  },
+  "oof_holdout_sizes": [
+    9,
+    9,
+    8,
+    8,
+    8
+  ],
+  "oof_unique_patients": 42,
+  "calibration_method": "ordinal_temperature_thresholds",
+  "final_calibration": {
+    "checks": {
+      "brier_within_limit": true,
+      "ece_within_limit": true,
+      "nll_not_worse": true
+    },
+    "fit_split": "validation",
+    "measured": {
+      "brier_score": 0.6667867452702152,
+      "ece": 0.0016776354362567636,
+      "nll_after": 1.0987926656135487,
+      "nll_before": 1.1835752673386406
+    },
+    "passed": true,
+    "thresholds": {
+      "maximum_brier_score": 0.8,
+      "maximum_ece": 0.1,
+      "nll_tolerance": 1e-08
+    },
+    "version": "synthetic_pipeline_smoke_v1"
+  },
+  "fold_calibration": [
+    {
+      "nll_before": 1.183923597559168,
+      "nll_after": 1.0987785723067107,
+      "ece": 0.00172266902195084,
+      "brier_score": 0.6667774103475342
+    },
+    {
+      "nll_before": 1.1501590085005036,
+      "nll_after": 1.0973015860293645,
+      "ece": 0.004592374588052429,
+      "brier_score": 0.6659023634648833
+    },
+    {
+      "nll_before": 1.0755347275518323,
+      "nll_after": 0.9768250932606163,
+      "ece": 0.05170909136257819,
+      "brier_score": 0.5946537418153447
+    },
+    {
+      "nll_before": 1.1454011727484794,
+      "nll_after": 1.0970370184559808,
+      "ece": 0.0016901780747705097,
+      "brier_score": 0.6655966089452146
+    },
+    {
+      "nll_before": 1.1311472210476334,
+      "nll_after": 1.095220275475766,
+      "ece": 0.013986707975467052,
+      "brier_score": 0.6645242341887865
+    }
+  ],
+  "subset_states": 2880,
+  "bellman_targets_by_split": {
+    "test": 40,
+    "train": 218,
+    "validation": 48
+  },
+  "test_rows_used_for_training_or_selection": 0,
+  "state_dim": 87,
+  "action_count": 10,
+  "example_validation_id": "SYN-0005",
+  "example_budget_usd": 500.0,
+  "teachers": [
+    {
+      "seed": 42,
+      "best_epoch": 2,
+      "best_validation_loss": 1.1206722259521484,
+      "top_action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.5836671590805054,
+        "REQUEST_APOE": 0.09791677445173264,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.284100204706192,
+        "DIAGNOSE_MCI": 0.03252699598670006,
+        "DIAGNOSE_AD": 0.0017888193251565099
+      }
+    },
+    {
+      "seed": 123,
+      "best_epoch": 2,
+      "best_validation_loss": 0.6783052682876587,
+      "top_action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.8220273852348328,
+        "REQUEST_APOE": 0.057440388947725296,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.05871392786502838,
+        "DIAGNOSE_MCI": 0.02355952002108097,
+        "DIAGNOSE_AD": 0.03825869783759117
+      }
+    },
+    {
+      "seed": 2026,
+      "best_epoch": 2,
+      "best_validation_loss": 0.9723069667816162,
+      "top_action": "REQUEST_COGNITIVE",
+      "probabilities": {
+        "REQUEST_COGNITIVE": 0.8442174196243286,
+        "REQUEST_APOE": 0.09704796969890594,
+        "REQUEST_BLOOD": 0.0,
+        "REQUEST_CSF": 0.0,
+        "REQUEST_STRUCTURAL_MRI": 0.0,
+        "REQUEST_AMYLOID_PET": 0.0,
+        "REQUEST_TAU_PET": 0.0,
+        "DIAGNOSE_CN": 0.026887670159339905,
+        "DIAGNOSE_MCI": 0.004074272699654102,
+        "DIAGNOSE_AD": 0.02777264080941677
+      }
+    }
+  ]
+}

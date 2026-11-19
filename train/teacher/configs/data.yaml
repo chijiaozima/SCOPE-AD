@@ -1,0 +1,81 @@
+schema_version: 1
+input_path: ../ADNI_filtered
+patient_id_column: subject_id
+label_column: diagnose
+label_regex: 'mapped_label:\s*(CN|MCI|AD)'
+labels: [CN, MCI, AD]
+
+# A patient contributes one baseline episode. These CSVs are input shards only;
+# final train/validation/test membership comes exclusively from the locked manifest below.
+source_splits:
+  train: train.csv
+  validation: val.csv
+  test: test.csv
+# The source files are only input shards. Final membership is locked to this
+# audited patient manifest so the copied legacy baseline cannot leak across a
+# changed split definition.
+locked_split_manifest: artifacts/legacy_ordinal/split_ids_seed42.csv
+locked_split_counts:
+  train: 1552
+  validation: 333
+  test: 333
+baseline_visit_column: visit
+baseline_visit_priority: [bl, sc]
+
+# Demographics are always visible. APOE is physically stored beside the
+# demographic columns in ADNI_filtered, but is deliberately split out as the
+# maskable `apoe` acquisition modality to prevent base-state leakage.
+base_modality:
+  name: demographic
+  source_columns: [demographic]
+acquisition_modalities:
+  - name: cognitive
+    source_columns: [cognitive_scales]
+  - name: apoe
+    source_columns: [apoe_genotype]
+  - name: blood
+    source_columns: [blood_biomarkers]
+  - name: csf
+    source_columns: [csf_biomarkers]
+  - name: structural_mri
+    source_columns: [structural_mri]
+  - name: amyloid_pet
+    source_columns: [amyloid_pet]
+  - name: tau_pet
+    source_columns: [tau_pet]
+
+unavailable_patterns:
+  - not available
+  - unavailable
+  - missing
+  - no data
+numeric_inference_threshold: 0.95
+categorical_min_frequency: 5
+categorical_max_levels: 64
+
+leakage_columns:
+  - DX
+  - DX_bl
+  - diagnosis
+  - diagnose
+  - group
+  - clinical_status
+  - final_label
+  - conversion_label
+  - future_diagnosis
+
+# Free-text diagnosis terms are forbidden even when the enclosing source column
+# has an otherwise safe name. This is checked after key/value parsing.
+leakage_value_patterns:
+  - "\\balzheimer(?:'s)?(?: disease)?\\b"
+  - "\\bmild cognitive impairment\\b"
+  - "\\bcn\\b"
+  - "\\bmci\\b"
+  - "\\bad\\b"
+  - "\\bdementia\\b"
+  - "\\bcognitively normal\\b"
+  - "\\bnormal cognition\\b"
+
+artifacts:
+  prepared_dir: artifacts/data
+  legacy_ordinal_dir: artifacts/legacy_ordinal

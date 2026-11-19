@@ -1,0 +1,130 @@
+{
+  "source_snapshot": "28May2026",
+  "verified_on": "2026-11-19",
+  "input_file_sha256": {
+    "All_Subjects_My_Table_28May2026.csv": "e59ed584d4a3dd0aa6dbdddcbcbd8d529a3385e2d460235388015d172997f24d",
+    "All_Subjects_PTDEMOG_28May2026.csv": "2b00c09eabb5ca8e3c98302230579e688ab374051921d61298b9225811b8d5c5",
+    "All_Subjects_UCBERKELEY_AMY_6MM_28May2026.csv": "617631dd894c11bb0bbf63de7a64603f0b2889eec40e8512fc3f1260875522cd",
+    "All_Subjects_UCBERKELEY_TAU_6MM_28May2026.csv": "5d5061df051e044796f9974e33274c57edf69d14aad40d8ca2a234ca01bda3c0",
+    "All_Subjects_UCD_WMH_28May2026.csv": "d4873254f748a84536a3b9fcce26ac53a6b24f8ded7c7872bea51a09cfac97ca",
+    "All_Subjects_UCSFFSX7_28May2026.csv": "d059ad8cc2265334f19c1de68a2deed32f9f07196a3dee3c42a4d04711068429",
+    "DATADIC.csv": "f0c6ccd261a2d17924c29a50e4fea98d0ac2af2f06bef6cb35dff6841c54ed76"
+  },
+  "filtered_input_sha256": {
+    "train": "684d7374ceff984064bc4728b668afc0e600651d866743affe0baf3000a11292",
+    "val": "67d221b22b7461e1e476f3aae41d366aba1514a85c15043b8b702dc1a180c397",
+    "test": "9bda242fbb17f5be9f57aecbb114c7341905c1edb3fdade01fc7c1a495fe5f05"
+  },
+  "final_files": {
+    "train.csv": {
+      "bytes": 3178751,
+      "sha256": "a4a97bb701d0f88fc1501a142d7d9fed22c3a6c8e1c6e4b0f6d87b04c88ff5a7"
+    },
+    "val.csv": {
+      "bytes": 663367,
+      "sha256": "fe43fc3bb1664cb649b2077d460056df05c79a373c24ac7fcd7e6944feb26292"
+    },
+    "test.csv": {
+      "bytes": 676283,
+      "sha256": "9273c523c897796e599f70116a21724003f4dcda2955f387aedab2ddf1f3fb42"
+    },
+    "split_ids_seed42.csv": {
+      "bytes": 47097,
+      "sha256": "b8fbd61d5ba4e4d3455958dd118108c44b4ac3d94f151f1cdb512c9fc5c528f7"
+    }
+  },
+  "counts": {
+    "train": 1552,
+    "validation": 333,
+    "test": 333
+  },
+  "by_class": {
+    "train": {
+      "CN": 659,
+      "MCI": 672,
+      "AD": 221
+    },
+    "validation": {
+      "CN": 141,
+      "MCI": 144,
+      "AD": 48
+    },
+    "test": {
+      "CN": 141,
+      "MCI": 145,
+      "AD": 47
+    }
+  },
+  "my_table": {
+    "rows": 24865,
+    "ordered_column_sha256": {
+      "subject_id": "48d4b9308e55c7860893c157c153db0d0285607446736df990925075ddf239bf",
+      "visit": "1982fbc8ea81673aa0b3da5aafe9e4c29403862127c73f18580001129baa8b7f",
+      "DIAGNOSIS": "65a96156ccbc75db5569c9199b70ea1722abc6df1934a667dff70fc409acffb8",
+      "MOTHDEM": "cac4b9d66655e65e44635610d8ff98affa4ec9d6f5eca75fe8612aac2b713d79",
+      "MOTHAD": "d821781e012c9744810ef40dad3f541093c8757e87d112681af9ce2f379c9f5a",
+      "MOTHSXAGE": "ffb87926e850707febfc50061187e6a50e62c580d1f7ea6a105b09ba4bde6439",
+      "FATHDEM": "d06bef896a5d377709ce4b0e54b55c50ce97ac6135a88a16da04c7c95b834ddb",
+      "FATHAD": "26758f1d750c30484f801d19b2e64a7f7ecc118e95dea72daea3a8dd52304de5",
+      "FATHSXAGE": "f6971963b410c06126d99a2d0a1e13eaa9e4832a6b9371e1c9c03d048239a230",
+      "SIBDEMENT": "a123af0fa8e847cbf92000b6cd48413af0faaf75cd5b9660f03d5b2d91170179",
+      "SIBAD": "00ab463cd936bb2825cb17bd5fc087289281e56baf74474e11eea024ab896932",
+      "SIBSXAGE": "086a063c54c6889429acab51fb09357bc93b82b79c2a75b9974fd4b866bdc659",
+      "FHQMOM": "6a9d280e45d8670671a6e44a5fd04d59d72250fa4fc2d69f07eceea315514df8",
+      "FHQMOMAD": "b310a1bd16b6d533081d21a34386dad4872b736b372ee1d9b085ca2d6097a704",
+      "FHQDAD": "afebd0da93f58422545b5db87369578382d8cae215c321a9e57b11efcda379fe",
+      "FHQDADAD": "854fbc16a0abd010d0cea3df9eb106851d3cdfed985098f4acda692329a4c02f",
+      "IHSYMPTOM": "fba90cc84e0baec6661ec837bb743e601c1fe3082aa4cd55a2d5d3875eff803b",
+      "IHPRESENT": "bbdd624082bc5f87d2f92b189c9b10b3c8d31c41020b21ffd2e10397fc59abdc",
+      "IHCHRON": "173f323cf8290788953911b3e96b8eda6793c6ec7b75f1736b9bcc5fe0aa82a4",
+      "IHSEVER": "47760b0bc351a5fde39b10e765a501ac79d82cdb9413389a3c4b9735ef271043",
+      "IHONGOING": "4cf70dcb8775e5ef83575a7547bbbd9564da63181244c72ba01ba9cf7c151920",
+      "MHPSYCH": "2d1abe848e9626daacad8e61a9c7f8911f1c2b00863418e3aaaa6ab8596d2bab",
+      "MH2NEURL": "95d6517bb5771eca5473a914f1909a8053785ec7a3dab786a49e9b2209be04c2",
+      "MH3HEAD": "f978d1aba0b54c40af90fd5112e2e1174c69a3c542b1ff74c448ab589a9b9df8",
+      "MH4CARD": "2d75a5702c1fb4ef8708b6e4b19782360ce4b124a550a7dffc88c91769710827",
+      "MH5RESP": "c282567e8875a85edb55f951d4a93d37502cd4324ae3485dc422c9090371ce43",
+      "MH9ENDO": "f57ef51a91803fbcb86b418bc61556570e8b586e3f02962660f1737992a37ba5",
+      "MH14ALCH": "16526771790cdd09ca2357870b64731a5968de61e5f7b9ddc8c0bb2c14746fb1",
+      "MH14AALCH": "2bd73bcc6a9ec908d89f94bc76a0167bed4a9f5a19f59f8e3f25879a8dfaf1f8",
+      "MH14BALCH": "3487263c4bd297cf6502ee5f6aee1b0d206f75880f48120ae0ef58b4fb06b440",
+      "MH14CALCH": "5e715e3abbafb2156cd03c1384905183e271e69a57629d1f6b8efbed6bf44902",
+      "MH15DRUG": "2247c739637fbe29f88f617fffc0fe4e6a3a69fc05f2c9097e63a56a5c0d8731",
+      "MH15ADRUG": "4851515628e673fe2b44b091b5402bda4322cd18fd508f728bf215a1bbb2855b",
+      "MH15BDRUG": "b591893e80ae4bb9f7fcf260fd4b95307dff74198fa7bb7a580f8cb190a974ee",
+      "MH16SMOK": "d915af0f05774fe9abb6e6728a24abe3a7f5f2de22147d7b07933f1f1b101fe2",
+      "MH16ASMOK": "f3bef832ea973abda8c0ed7d805cef3d2069c3dbf1134490e1bf52932e86afac",
+      "MH16BSMOK": "79616b4063dccac3096a32730748437a4e3e6ad0b83d956206293228a75d63b5",
+      "MH16CSMOK": "6f30808f2e12b2cf0c69990e1fd21849a7046c872ea31c8a54397d128e74bc4c",
+      "HMSCORE": "6d74a45872ca0cfb2a8ac3ef93d271f7e8f868487416a6989a7b0d5e2eb7f1ae",
+      "IHDESC": "a40a952956ba56f124dae14a067007fe3c4c165a7acd149c437a089540774ff3",
+      "MMSCORE": "1837d664d8a39e5874f2491af488d96de8ef666168c29dccf37c22cfc81ae6f8",
+      "GDTOTAL": "87d918a1836f4034000b728e4a7d85a44271d4c66cacb23371c8912f35888445",
+      "FAQTOTAL": "60108a12d720125c4449031fec495cd4c5f8cc195757cb608a36d93b821e41c2",
+      "NPITOTAL": "275b6c14d961a9fe2addc6df143e3c570221dc26a62d1df5a323ac090ee69282",
+      "TOTAL13": "bdfd80ec36cacb11380b620131c5ce0f25334be87a03e2778c3e4cad4d1f77d9",
+      "GENOTYPE": "357d3116a22400ddff3337fcf9bf4718a9b05bcf90c67d6bf1cedc0331d57291",
+      "pT217_F": "48b2618a5e891fdc416b25066263ade2c7e1e4016279e42b6fc299ce564f477f",
+      "AB42_F": "5503ff65ced708aeafb469ea2dab12025fa1665ffc321d4a88f40cb65f83a624",
+      "AB40_F": "3be0d677112eef551f95a1ed73e11a17c9d1a38654f6713770cde60cd064ce96",
+      "AB42_AB40_F": "dd77d4c32ffbe88263cccff6d62a3fd0f422c6ba0d1e009ef3db39b36f0dd408",
+      "pT217_AB42_F": "99817d311ee10db54aa529ac4b00c056f993df1ba586bb061cab2f530f16304f",
+      "NfL_Q": "b27c1b83a740b7dc208b766cc38c25b1253080574733944c8509c5ec3f65e528",
+      "GFAP_Q": "4a99602c3e955f8d0efe9d24bb254b8c870c38a12bd7ff168d2b92376ec993cc",
+      "pT217_C2N": "529ef76ae57200b7cddafcd40ee3d6d918bc902152aba510249b62e9d3c51541",
+      "npT217_C2N": "9c496a0c4192bbe29f8a478e4cba45d594521c2caab76cc6f04110d4c3b18b51",
+      "AB42_C2N": "a2993f43f8151613850b036628f5e466c4b2c8b95a57600448a41d071034e1b1",
+      "AB40_C2N": "e52aefdb954f8b86388d872ba7f5f7f094e77a9c4860e0d7e676f499efb99736",
+      "AB42_AB40_C2N": "8c949829a9665af52915e2b1e41f412c7de0c6999a005b67e035a6035c3258b4",
+      "pT217_npT217_C2N": "b955948de31609c19d37f7b309edf04e4be14fd16a873b62aff00c0e47aa334b",
+      "APS2_C2N": "5dc72198739271db781620c69a797527400f982686b0dd2312744e237508ab08",
+      "APOE_C2N": "56eaf21e4d252d480c1668d001d59fb76390886faadf61da87d0dfe2daa079a0",
+      "NfL_F": "d521317ce6c1be823e7bf3a316d81d67d49b9d93e2f3c77fc375afc2f89d1cd4",
+      "GFAP_F": "aadc6a066d42e1dd72b9404e5f7a46b49e0a5b3e8e0de0a38fc0a8515c35ec97",
+      "ABETA40": "861d8f9e47caa678444da683e1b0b0150aaf786bb4a0ed44e76f77d7dba3a1cb",
+      "ABETA42": "4a403c0646a7e06313f1e412fec513e20b381f7e9de4ff0074f90b8bd2a1073a",
+      "TAU": "f8ba14def4435a7e372d00506c5b03870cc1d214223a040542bb6eefcf243f8f",
+      "PTAU": "4267672ca38463ce305ee1b544cd67d2a0feac52f103886ebabee509077475bf"
+    }
+  }
+}

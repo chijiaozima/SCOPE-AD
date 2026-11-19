@@ -1,0 +1,44 @@
+{
+  "synthetic": true,
+  "seed": 42,
+  "counts": {
+    "train": 42,
+    "validation": 9,
+    "test": 9
+  },
+  "by_class": {
+    "train": {
+      "CN": 14,
+      "MCI": 14,
+      "AD": 14
+    },
+    "validation": {
+      "CN": 3,
+      "MCI": 3,
+      "AD": 3
+    },
+    "test": {
+      "CN": 3,
+      "MCI": 3,
+      "AD": 3
+    }
+  },
+  "files": {
+    "train.csv": {
+      "bytes": 35536,
+      "sha256": "3d15de2d6cb448649886d19b1e8b2c19b1696dfafad8d09ef82828de57d50f0e"
+    },
+    "val.csv": {
+      "bytes": 7783,
+      "sha256": "93737d8953019cd28be8062c7b27ae28c87d54bd0e51fc3a3121c97a21ad1fcd"
+    },
+    "test.csv": {
+      "bytes": 7780,
+      "sha256": "f8acb579362fc7b1e0aa656d7cdc2b9bb980e2cda2a05e68d595e21b86bd71d2"
+    },
+    "split_ids_seed42.csv": {
+      "bytes": 1159,
+      "sha256": "eba35cc2d679789f10573795d8d3627683b04a1c308ac99ee91538a38a1b887a"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# Shared Python 3.12 environment for the public examples (Steps 1–4).
+-r train/teacher/requirements.txt

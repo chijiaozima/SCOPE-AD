@@ -1,0 +1,9 @@
+# Python 3.12; package versions from the 4090pc environment.
+numpy==2.5.2
+pandas==2.3.3
+scikit-learn==1.9.0
+scipy==1.18.0
+PyYAML==6.0.3
+joblib==1.5.3
+pyarrow==23.0.1
+torch==2.13.0

@@ -1,0 +1,14 @@
+# Overrides for the independently generated Step 1 fixture.
+ordinal:
+  device: cpu
+  training:
+    epochs: 2
+  calibration:
+    acceptance_gate:
+      version: synthetic_pipeline_smoke_v1
+      maximum_brier_score: 0.80
+planner:
+  device: cpu
+  planner:
+    budgets_usd: [500]
+    max_epochs: 2

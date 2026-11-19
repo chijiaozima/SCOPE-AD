@@ -1,0 +1,29 @@
+artifacts:
+  rollout_dir: artifacts/rollouts
+  metrics_dir: artifacts/metrics
+  figures_dir: artifacts/figures
+  report_dir: artifacts/reports
+
+experiments:
+  seeds: [42, 123, 2026]
+  bootstrap_samples: 2000
+  confidence_level: 0.95
+  horizons: [1, 2, 3, 7]
+  energy_temperatures: [0.1, 0.3, 0.5, 1.0]
+  cost_weights: [0.0, 0.25, 0.5, 1.0, 1.5]
+  belief_modes: [raw, categorical, ordinal]
+  replanning: [false, true]
+  bellman_modes: [hard, soft]
+  ranking_kl_weights: [0.0, 1.0]
+  student_targets: [hard, soft]
+  budgets_usd: [500, 1000, 2000, 4000, 8520]
+
+robustness:
+  price_multipliers:
+    csf: [1.0, 1.5, 2.0]
+    structural_mri: [1.0, 1.5, 2.0]
+    amyloid_pet: [1.0, 1.5, 2.0]
+    tau_pet: [1.0, 1.5, 2.0]
+  random_missingness: [0.0, 0.1, 0.2, 0.4]
+  high_cost_unavailable: [amyloid_pet, tau_pet]
+  calibration_temperatures: [0.75, 1.0, 1.25, 1.5]
